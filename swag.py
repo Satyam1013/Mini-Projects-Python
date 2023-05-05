@@ -1,6 +1,8 @@
 import random;
 #Snake, Water And Gun = SWAG
 def checker(computer, you):
+    if (you > 2):
+        print('You Stupid!')
     if (computer == you):
         return 0
     if (computer == 0 and you == 1):
@@ -22,6 +24,6 @@ score = checker(computer,you)
 if (score == 0):
     print("It's a Draw")
 elif (score == -1):  
-    print('You Lose')
-else:
+    print('You Lose')    
+elif (score == 1):
     print('You Win')            
